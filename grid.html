@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: nav; }
+.item3 { grid-area: section; }
+.item4 { grid-area: aside; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'nav header header header header header'
+    'nav section section section section aside'
+    'nav footer footer footer footer aside';
+  grid-gap: 100px;
+  background-color: darkblue;
+  padding: 300px;
+}
+
+.grid-container > div {
+  background-color: rgba(453, 100, 255, 0.8);
+  text-align: center;
+  padding: 400px 0;
+  font-size: 10px;
+}
+</style>
+</head>
+<body>
+
+<h1>Grid Layout</h1>
+
+<p>This grid layout contains six columns and three rows:</p>
+
+<div class="grid-container">
+  <div class="item1">Beginners Guide to Health and Wellness</div>
+  <div class="item2"><nav>
+    <ul>
+      <li><a href="">1</a></li>
+      <li><a href="">2</a></li>
+      <li><a href="">3</a></li>
+      <li><a href="">3</a></li>
+      <li><a href="">3</a></li>
+      <li><a href="">3</a></li>
+      <li><a href="">3</a></li>
+    </ul>
+  </nav>
+  </div>
+  <div class="item3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, repellat, alias. Repellendus, a inventore ea deleniti quidem, omnis eaque tempore facilis temporibus culpa fugit dolorum veritatis eveniet ipsa ullam magnam.
+	</div>  
+  <div class="item4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea nihil optio reprehenderit facilis non molestiae quisquam at ducimus quibusdam doloremque.
+	</div>
+  <div class="item5">For more details, visit <a href="https://www.forksoverknives.com/"> visit ForksOverKnives.com!</a></div>
+</div>
+
+</body>
+</html>

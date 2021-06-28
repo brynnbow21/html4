@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: nav; }
+.item3 { grid-area: section; }
+.item4 { grid-area: aside; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'nav header header header header header'
+    'section section section section section aside'
+    'footer footer footer footer footer aside';
+  grid-gap: 10px;
+  background-color: darkblue;
+  padding: 30px;
+}
+
+.grid-container > div {
+  background-color: rgba(453, 100, 255, 0.8);
+  text-align: center;
+  padding: 30px 0;
+  font-size: 10px;
+}
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+  <div class="item1"><p style="font-size:30px;">Beginners Guide to Health and Wellness</p></div>
+  <div class="item2"><nav>
+      <a href="">Link 1</a>
+      <a href="">Link 2</a>
+      <a href="">Link 3</a>
+  </nav>
+  </div>
+  <div class="item3"><p style="font-size:15px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, repellat, alias. Repellendus, a inventore ea deleniti quidem, omnis eaque tempore facilis temporibus culpa fugit dolorum veritatis eveniet ipsa ullam magnam.</p>
+	</div>  
+  <div class="item4"><img src="pictures/health.jpeg" width="300" height="250" alt="healthy food"/> </div>
+  <div class="item5"><p style="font-size:15px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, repellat, alias. Repellendus, a inventore ea deleniti quidem, omnis eaque tempore facilis temporibus culpa fugit dolorum veritatis eveniet ipsa ullam magnam.</p></div>
+</div>
+
+</body>
+</html>
